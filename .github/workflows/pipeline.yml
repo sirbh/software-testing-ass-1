@@ -22,6 +22,7 @@ jobs:
   report_pipeline:
     runs-on: ubuntu-20.04
     if: always()
+    continue-on-error: true
     needs: test_pipeline
     steps:
       - uses: actions/checkout@v3
