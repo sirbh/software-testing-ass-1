@@ -32,6 +32,13 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: test-coverage
-        run: npm run coverage
+        run: |
+          set +e
+          npm run coverage
+          COVERALLS_RESULT=$?
+          set -e
+          exit $COVERALLS_RESULT
       - name: Coveralls
-        uses: coverallsapp/github-action@v2 || true
+        uses: coverallsapp/github-action@v2
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
