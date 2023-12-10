@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "start": "node index.js"
+    "start": "node index.js",
+    "coverage": "c8 mocha"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/sirbh/software-testing-ass-1#readme",
   "devDependencies": {
+    "c8": "^8.0.1",
     "chai": "^4.3.10",
     "mocha": "^10.2.0"
   }
