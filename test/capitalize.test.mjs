@@ -36,4 +36,8 @@ describe('capitalize', () => {
     const result = capitalize(123);
     expect(result).to.equal('123');
   });
+  it('should throw an error for non-alphabetic input', () => {
+    const testFn = () => capitalize('123'); // Numeric input
+    expect(testFn).to.throw(Error, 'Input must contain only alphabetic characters.');
+  });
 });
