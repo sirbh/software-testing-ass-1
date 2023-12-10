@@ -21,7 +21,7 @@ jobs:
   
   report_pipeline:
     runs-on: ubuntu-20.04
-    if: ${{ (github.event_name == 'push'||github.event_name == 'merge') && !contains(toJson(join(github.event.commits.*.message, ' ')),'#skipdeploy') }}
+    if: always()
     needs: test_pipeline
     steps:
       - uses: actions/checkout@v3
