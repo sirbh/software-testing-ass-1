@@ -1,0 +1,24 @@
+{
+  "name": "software-testing-ass-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirbh/software-testing-ass-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sirbh/software-testing-ass-1/issues"
+  },
+  "homepage": "https://github.com/sirbh/software-testing-ass-1#readme",
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
+  }
+}
